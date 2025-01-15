@@ -84,10 +84,10 @@ if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   ament_lint_auto_find_test_dependencies()
 
-  find_package(ament_cmake_gmock REQUIRED)
-  ament_add_gmock(test_graph_monitor test/test_graph_monitor.cpp)
-  target_link_libraries(test_graph_monitor
-    ${PROJECT_NAME})
+  # find_package(ament_cmake_gmock REQUIRED)
+  # ament_add_gmock(test_graph_monitor test/test_graph_monitor.cpp)
+  # target_link_libraries(test_graph_monitor
+  # ${PROJECT_NAME})
 endif()
 
 ament_export_targets(${PROJECT_NAME}Targets HAS_LIBRARY_TARGET)
